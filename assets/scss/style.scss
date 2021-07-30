@@ -1,5 +1,5 @@
 @import "./variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Open+Sans+Condensed:wght@300&display=swap");
 
 * {
   box-sizing: border-box;
@@ -8,6 +8,8 @@
 html,
 body {
   font-family: $font-family-primary;
+  font-weight: 400;
+  color: $color-gray;
 }
 
 img {
@@ -22,6 +24,12 @@ ul {
 li {
   list-style: none;
   white-space: nowrap;
+}
+
+h4 {
+  color: $color-red;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 a {
@@ -42,8 +50,8 @@ iframe {
 
 .btn {
   border-radius: 0;
-  font-family: $font-family-secondary;
-  font-weight: bold;
+  font-weight: 700;
+  width: fit-content;
 }
 
 .btn-red {
@@ -65,7 +73,6 @@ iframe {
   color: white;
   background-color: $color-blue;
 }
-
 
 // HEADER
 header {
@@ -185,12 +192,23 @@ nav {
   border-radius: 0px;
 }
 
+.card-header {
+  font-weight: 700;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .card-header:first-child {
   border-radius: 0px;
 }
 
 .card-body {
   height: 225px;
+}
+
+.card-frame {
+  height: 100%;
 }
 
 .volunteers {
@@ -203,7 +221,75 @@ nav {
   color: white;
 }
 
+.info-links {
+  padding: 30px 0px;
+}
+
+.info-links a {
+  color: #777;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.info-links > a:first-child {
+  margin-right: 25px;
+  color: #332982;
+  border-bottom: 4px solid #332982;
+}
+
+.program {
+  display: flex;
+}
+
+.program div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.program img {
+  justify-self: center;
+  align-self: center;
+  height: 138px;
+  width: 138px;
+  margin-right: 1rem;
+  object-fit: contain;
+}
+
+.rescue-dog img {
+  height: 300px;
+  object-fit: contain;
+}
+
 // MEDIA QUERIES
+@media (max-width: 767px) {
+  .info-links > a:first-child {
+    margin-bottom: 10px;
+  }
+
+  .program {
+    flex-direction: column;
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    img {
+      margin-bottom: 15px;
+      height: 50%;
+      width: 50%;
+    }
+  }
+
+  .rescue-dog {
+    img {
+      margin-top: 15px;
+    }
+  }
+  }
+
 @media (max-width: 991px) {
   nav {
     display: flex;
@@ -220,5 +306,9 @@ nav {
 
   .show {
     display: block;
+  }
+
+  .hero-text {
+    height: 40%;
   }
 }

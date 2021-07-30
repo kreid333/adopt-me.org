@@ -1,0 +1,23 @@
+{
+  "name": "adopt-me.org",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kreid333/adopt-me.org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kreid333/adopt-me.org/issues"
+  },
+  "homepage": "https://github.com/kreid333/adopt-me.org#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.2"
+  }
+}

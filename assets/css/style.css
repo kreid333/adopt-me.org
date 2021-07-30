@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Open+Sans+Condensed:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style: none;
+  white-space: nowrap;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: white;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #EF3E42;
+  height: 100px;
+}
+header .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav {
+  width: 40%;
+}
+nav .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+nav li a {
+  color: white;
+  transition: all 0.25s ease-in-out;
+  padding: 0px 10px;
+}
+nav li a:hover {
+  color: white;
+  transform: scale(0.85);
+}
+nav .hamburger {
+  width: 45px;
+  display: none;
+}
+nav .hamburger div {
+  height: 5px;
+  background-color: white;
+  margin: 10px 0px;
+  border-radius: 10px;
+}
+
+.brand-img {
+  height: 64px;
+  width: 64px;
+  margin-right: 5px;
+}
+
+.brand {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.brand span {
+  font-size: 2rem;
+}
+
+.menu {
+  display: none;
+  background-color: #EF3E42;
+  position: relative;
+  top: 100px;
+}
+.menu ul {
+  text-align: center;
+}
+.menu ul li {
+  width: 100%;
+}
+.menu ul li a {
+  padding: 20px;
+}
+.menu ul li:hover {
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 991px) {
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  nav .navigation {
+    display: none;
+    width: 100%;
+  }
+  nav .hamburger {
+    display: block;
+  }
+
+  .show {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

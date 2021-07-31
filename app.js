@@ -22,7 +22,7 @@ app.listen(PORT, () => {
   console.log(`App is running on http://localhost:${PORT}`);
 });
 
-// RENDERING INDEX.HTML FOR ALL PATHS
-app.get("*", (req, res) => {
+// RENDERING INDEX.HTML FOR ALL ROOT
+app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/index.html"));
 });

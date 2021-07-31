@@ -16,6 +16,10 @@ app.use(
   "/bootstrap",
   express.static(path.join(__dirname, "./node_modules/bootstrap/dist/css"))
 );
+app.use(
+    "/gsap",
+    express.static(path.join(__dirname, "./node_modules/gsap/dist/"))
+  );
 
 // LISTENING ON LOCALHOST
 app.listen(PORT, () => {

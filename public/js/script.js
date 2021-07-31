@@ -17,7 +17,7 @@ let timeline = gsap.timeline();
 
 timeline
   .fromTo(
-    ".brand",
+    "header div .brand",
     {
       x: -300,
       opacity: 0,
@@ -29,7 +29,7 @@ timeline
     }
   )
   .fromTo(
-    ".navigation",
+    "header div nav .navigation",
     {
       x: 300,
       opacity: 0,

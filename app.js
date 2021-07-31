@@ -3,7 +3,7 @@ const express = require("express");
 const path = require("path");
 
 // DEFINING PORT
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3000;
 
 // CREATING INSTANCE OF EXPRESS
 const app = express();

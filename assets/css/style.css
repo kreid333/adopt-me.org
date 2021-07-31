@@ -34,6 +34,9 @@ a {
   display: inline-block;
   text-decoration: none;
   color: white;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
 }
 
 a:hover {
@@ -72,6 +75,21 @@ iframe {
   background-color: #332982;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.navigation li a {
+  color: white;
+  transition: all 0.25s ease-in-out;
+}
+.navigation li a:hover {
+  color: white;
+  transform: scale(0.85);
+}
+
 header {
   background-color: #EF3E42;
   height: 100px;
@@ -85,21 +103,6 @@ header .container {
 
 nav {
   width: 40%;
-}
-nav .navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-nav li a {
-  color: white;
-  transition: all 0.25s ease-in-out;
-  padding: 0px 10px;
-}
-nav li a:hover {
-  color: white;
-  transform: scale(0.85);
 }
 nav .hamburger {
   width: 45px;
@@ -254,7 +257,28 @@ nav .hamburger div {
   object-fit: contain;
 }
 
+.footer {
+  height: 300px;
+  background-color: #332982;
+  color: white;
+}
+
+.footer .container {
+  height: 100%;
+}
+
+.footer .container .row {
+  height: 100%;
+  align-items: center;
+}
+
 @media (max-width: 767px) {
+  .navigation {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
   .info-links > a:first-child {
     margin-bottom: 10px;
   }
@@ -278,8 +302,16 @@ nav .hamburger div {
   .rescue-dog img {
     margin-top: 15px;
   }
+
+  .footer .container .row .col-md-5 {
+    order: 2;
+  }
+
+  .footer .container .row .col-md-7 {
+    order: 1;
+  }
 }
-@media (max-width: 991px) {
+@media (max-width: 992px) {
   nav {
     display: flex;
     justify-content: flex-end;
@@ -298,7 +330,7 @@ nav .hamburger div {
   }
 
   .hero-text {
-    height: 40%;
+    height: 50%;
   }
 }
 
